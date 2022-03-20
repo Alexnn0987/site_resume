@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai&family=Hurricane&family=Inspiration&family=Roboto&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai&family=Hurricane&family=Inspiration&family=Roboto&display=swap');
+
+/* Основные стили ********************************************************/
+
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: lighter;
+  color: #222;
+  background: #c8c8c8;
+}
+
+.container {
+  max-width: 750px;
+  margin-top: 20px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-style: italic;
+  margin-top: 0;
+}
+
+a {
+  font-family: 'Arima Madurai', sans-serif;
+  color: #222;
+  text-decoration: none;
+  padding: 6px 8px;
+}
+
+.btn {
+  font-weight: 700;
+  background: #222;
+  color: #fff;
+  padding: 15px 90px;
+  border: none;
+  border-radius: 10px;
+  font-family: inherit;
+}
+
+.btn:hover {
+  opacity: 0.8;
+  color: #e9967a;
+}
+
+/* Первый блок ********************************************************/
+
+.container img {
+  width: 200px;
+  border-radius: 25px;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.65);
+}
+
+.container h1 {
+  padding-top: 10px;
+}
+
+.block {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.block-text {
+  margin: 10px 40px;
+}
+
+.block-text p {
+  font-weight: 500;
+  padding: 10px 0;
+}
+
+.card-1 {
+  color: rgb(117, 114, 114);
+  margin: 20px auto;
+}
+
+.card-2 {
+  margin: 20px auto;
+}
+
+a:hover {
+  color: #fff;
+  background: #ec754d;
+  border-radius: 10px;
+}
+
+a:visited {
+  color: rgb(117, 114, 114);
+}
+
+/* Второй блок ********************************************************/
+
+.card {
+  border: 1px solid #222;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.card-3 {
+  background-color: #fff8dc;
+}
+
+.list {
+  padding: 0 20px;
+  list-style: none;
+}
+
+.list li {
+  margin: 10px;
+}
+
+/* Третий блок ********************************************************/
+
+.card-4 {
+  background-color: #e9967a;
+}
+
+table {
+  margin: 10px 0;
+}
+
+.table {
+  width: 100%;
+}
+
+.table th,
+.table td {
+  text-align: start;
+  padding: 10px;
+  max-width: 100px;
+}
+
+/* будет подсвечиваться строка в таблице */
+.table th:nth-child(-n + 3) {
+  background: #fff;
+}
+
+/* будет подсвечиваться каждая не четная строчка в таблице */
+.table td:nth-child(odd) {
+  background: #ffd700;
+}
+
+/* будет подсвечиваться второй столбец */
+.table tr:nth-child(1),
+.table tr:nth-child(2) {
+  background: #fff8dc;
+}
+
+/* Четвертый блок ********************************************************/
+
+.card-5 {
+  background-color: #ffd700;
+}
+
+.form h2 {
+  text-align: center;
+}
+
+.from-row {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.from-row .form-group {
+  width: 50%;
+  margin-right: 20px;
+}
+
+/* убираем крайний отступ справа */
+.from-row .form-group:last-child {
+  margin-right: 0;
+}
+
+.form-group label {
+  display: block;
+  color: rgb(117, 114, 114);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  color: #222;
+  padding: 10px;
+  outline: none;
+  font-family: inherit;
+  border-radius: 10px;
+}
+
+/* выравниваем кнопку по центру */
+.card .btn {
+  margin-top: 20px;
+  /* width: 100%;
+  text-align: center; */
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+/* Media ********************************************************/
+
+@media (max-width: 650px) {
+  .container {
+    max-width: 550px;
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  .block {
+    display: block;
+    text-align: center;
+  }
+
+  .table tr {
+    font-size: 12px;
+  }
+
+  .from-row {
+    display: block;
+  }
+
+  .from-row .form-group {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+}
